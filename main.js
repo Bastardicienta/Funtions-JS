@@ -104,33 +104,8 @@ function exponential(base,exponent){
         console.log("El valor exponencial es " + Math.pow(base,exponent))
     }
 }
-exponential(3,2)
+//exponential(3,2)
 
 //Escribe una función que reciba un número como parámetro. Este número será la cantidad de veces que se debe solicitar, con la función prompt, que el usuario ingrese el nombre de un país diferente. Después de que el usuario ingrese el nombre de los países, el sistema debe mostrar un mensaje en pantalla indicando el nombre del país y cuántas letras tiene el nombre del país.
 
-function counterCountry() {
-    let repeat = prompt("¿cuántas veces quieres que se repita?");
-
-    if (repeat == null || repeat == "" || !Number.isInteger(Number(repeat))) {
-         alert("Ingrese información valida");
-    } else {
-
-         let paises = [];
-         for (let index = 0; index < repeat; index++) {
-              let pais = prompt("Ingrese el nombre del país");
-              if (pais == null || pais == "") {
-                   alert("Ingrese información valida");
-
-              } else {
-                   paises[index] = pais;
-              }
-         }
-
-         for (let index = 0; index < paises.length; index++) {
-
-              alert("La palabra: " + paises[index] + " tiene " + paises[index].length + " letras")
-
-         }
-    }
-
-}
+//Con este también me hice bolita
